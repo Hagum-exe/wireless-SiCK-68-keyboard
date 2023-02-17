@@ -2,8 +2,8 @@
 #include <BleKeyboard.h>
 
 
-const byte ROWS = 5; //four rows
-const byte COLS = 15; //three columns
+const byte ROWS = 5; //5 rows
+const byte COLS = 15; //15 columns
 char keys[ROWS][COLS] = {
   {'E', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '-', '=', 'B', '`'},
   {'T', 'q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p', '[', ']', 'H', 'D'},  //H=SLASH
@@ -79,15 +79,7 @@ void loop() {
                     bleKeyboard.press(KEY_RETURN);
                     break;
 
-                  //case'F':
-                    //bleKeyboard.press(KEY_LEFT_GUI);
-                    //bleKeyboard.press(32);
-                    //bleKeyboard.print("act");
-                    //bleKeyboard.press(KEY_RETURN);
-                    //bleKeyboard.release(KEY_LEFT_GUI);
-                    //bleKeyboard.release(32);
-                    //bleKeyboard.release(KEY_RETURN);
-                    //break;
+                  
 
                   case'M':
                    bleKeyboard.press(KEY_LEFT_GUI);
@@ -130,13 +122,8 @@ void loop() {
                     break;
 
                   case'V':
-                    //bleKeyboard.press(KEY_LEFT_GUI);
-                    //bleKeyboard.press('z');
-                    //bleKeyboard.release(KEY_LEFT_GUI);
-                    //bleKeyboard.release('z');
-                    //bleKeyboard.press(KEY_F11);
+                    
                     bleKeyboard.press(KEY_MEDIA_VOLUME_DOWN);
-                    //bleKeyboard.release(KEY_MEDIA_VOLUME_DOWN);
                     break;
 
                   case'Y':
@@ -144,16 +131,7 @@ void loop() {
                     break;
 
                   case'F':
-                    //bleKeyboard.press(KEY_LEFT_GUI);
-                    //bleKeyboard.press(KEY_LEFT_SHIFT);
-                    //bleKeyboard.press('z');
-                    //bleKeyboard.release(KEY_LEFT_GUI);
-                    //bleKeyboard.release(KEY_LEFT_SHIFT);
-                    //bleKeyboard.release('z');
                     bleKeyboard.press(KEY_MEDIA_VOLUME_UP);
-                    //bleKeyboard.release(KEY_MEDIA_VOLUME_UP);
-                    
-                    //bleKeyboard.press(KEY_F12);
                     break;
 
                   case'<':
@@ -219,12 +197,7 @@ void loop() {
                     bleKeyboard.release(KEY_RETURN);
                     break;
 
-                  //case'F':
-                    //bleKeyboard.release(KEY_LEFT_GUI);
-                    //bleKeyboard.release(32);
-                    //bleKeyboard.write("activity monitor");
-                    //bleKeyboard.release(KEY_RETURN);
-                    //break;
+                  
 
                   case'S':
                     bleKeyboard.release(KEY_RIGHT_SHIFT);
@@ -286,13 +259,6 @@ void loop() {
                     break;
 
 
-                  //case'V':
-                    // bleKeyboard.release(KEY_F11);
-                     //break;
-                     
-                  //case'F':
-                    //bleKeyboard.release(KEY_F12);
-                    //break;
 
 
                   
